@@ -1,10 +1,19 @@
 var btnLayout = document.querySelector("#btnMudaLayout")
+var mural = document.querySelector(".mural")
+
 function alteraNome() {
-    if(btnLayout.textcontent == "blocos") {
+    if(btnLayout.textContent == "Blocos") {
             btnLayout.textContent = "Linhas"
         } else {
             btnLayout.textContent = "Blocos"
         }
 }
 
-btnLayout.onclick = alteraNome
+function mudaClasse () {
+    mural.classList.toggle("mural--linha")
+}
+
+btnLayout.addEventListener ("click",function() {
+    mudaClasse()
+    alteraNome()
+})
