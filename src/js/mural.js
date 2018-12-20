@@ -17,7 +17,7 @@
                     </button>
 
                     <input type="radio" name="corDoCartao${numeroDoCartao}" value="#EBEF40" 
-                    id="corPadrão-cartao${numeroDoCartao}" class="opcoesDoCartao-radioTipo" checked>
+                    id="corPadrão-cartao${numeroDoCartao}" class="opcoesDoCartao-radioTipo" >
                     
                     <label for="corPadrão-cartao${numeroDoCartao}" class="opcoesDoCartao-tipo 
                     opcoesDoCartao-opcao" style="color: #EBEF40;" tabindex="0">
