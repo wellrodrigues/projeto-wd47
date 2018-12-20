@@ -88,4 +88,20 @@
 
 
     }
+
+    $.ajax({
+        url: "https://ceep.herokuapp.com/cartoes/carregar"
+        ,method: "GET"
+        ,data: {usuario: "well.freela@gmail.com"}
+        ,dataType: "jsonp"
+        ,success: function (objeto){
+            const cartoes = objeto.cartoes
+            console.log(objeto)
+            cartoes.forEach(function(cartao){
+                adicionaCartaoNoMural(cartao)
+            })
+        }
+    })
+
+
 })()
